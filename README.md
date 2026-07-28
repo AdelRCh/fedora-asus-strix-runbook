@@ -10,7 +10,7 @@ This Runbook is under construction as I document the commands typed to solve the
 ### Kernel-Level Issues and Fixes
 
 #### 0. Inability to create user on workstation due to the issues below
-* **Symptom:** Cannot login due to non-existing user credentials, inability to create user credentials using GUI (edge-case)
+* **Issue:** Cannot login due to non-existing user credentials, inability to create user credentials using GUI (edge-case)
 * **Root Cause:** All of the issues below
 * **Fix:** On GRUB launch (picking the boot option and pressing `e`), used all the flags listed below, removed `rhgb quiet` to track every event and crash, and added `rw init=/bin/bash` to skip the login screen and launch Bash (pressed F10 after the changes)
   
